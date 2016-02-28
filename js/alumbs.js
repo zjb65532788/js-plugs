@@ -6,7 +6,6 @@ function alumbs(params) {
 alumbs.prototype={
 	'defaults':{//默认配置
 		'container':$('#alumbscontainer'),//父容器
-		'alumbsitem':$('.alumbsitem'),
 		'width':'',//没有设置宽度，则为container的宽度
 		'height':'100%',//高度 默认百分百
 		'interval':false//是否自动播放
@@ -34,8 +33,7 @@ alumbs.prototype={
 		}else{
 			itemwidth=t.defaults.container.width();
 		}
-		t.defaults.alumbsitem.css({width:itemwidth}).addClass('alumbsitem');
-		t.defaults.eq(t.index).css({'visibility':'visible'});
+		t.alumbsitem=t.defaults.container.children().css({width:itemwidth}).addClass('alumbsitem').eq(t.index).css({'visibility':'visible'});
 	}
 }
 function addCss() {
