@@ -1,5 +1,5 @@
 #轮播小插件
-需要zepto、html5支持
+需要zepto、html5支持、若要支持非html5还需要改进一下方法、用jquery animation或者原生方法写
 
 #使用方法
 
