@@ -1,0 +1,63 @@
+/*jquery_dialog对话框*/
+.cli_dialog{
+	position:fixed;
+	top:50%;
+	left:50%;
+	background:white;
+	z-index:99999999;
+	display:none;
+    box-shadow: 0px 0px 14px #5A5A5A;
+}
+.dialog_shadow_top{
+    background:url(/static/images/plug-dialog-bg-shadow-x.png);
+    height:9px; 
+    position:absolute;
+    top:-9px;
+    left:10px;
+}
+.dialog_shadow_bottom{
+    background:url(/static/images/plug-dialog-bg-shadow-x.png);
+    height:9px; 
+    position:absolute;
+    bottom:-9px;
+    left:10px;
+}
+.dialog_shadow_left{
+    background:url(/static/images/plug-dialog-bg-shadow-y.png);
+    width:9px; 
+    position:absolute;
+    left:-9px;
+    top:10px;
+}
+.dialog_shadow_right{
+    background:url(/static/images/plug-dialog-bg-shadow-y.png);
+    width:9px; 
+    position:absolute;
+    right:-9px;
+    top:10px;
+}
+.shadow_round{
+	background:url(/static/images/plug-dialog-bg-shadow-z.png);
+	width:19px; 
+	height:19px; 
+	position:absolute;
+}
+.dialog_title{
+	height: 29px;
+    padding: 5px 0 5px 0px;
+    line-height: 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #CCC;
+    background:#D8D8D8; /*#56a845;*/
+    text-align: center;
+}
+.dialog_closed{
+	position: absolute;
+    right: -10px;
+    top: 8px;
+    background: url('/static/images/vcard/popup-close-ex.png');
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font: 22px '宋体';
+}

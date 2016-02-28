@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+		<title>dialog示例</title>
+		<link rel="stylesheet" type="text/css" href="css/jquery_dialog.css">
+		<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/dialog.js"></script>
+	</head>
+	<body>
+		<div id="dialog">这个一个对话框</div>
+		<div id="opendialog">点击打开对话框</div>
+		<script type="text/javascript">
+			var dialog=$('#dialog');
+			dialog.dialog({
+				title:'对话框示例',
+				closecallback:function(){
+					alert("对话框关闭了");
+				},
+				close:true//初始关闭状态
+			});
+			$('#opendialog').bind('click',function(){
+				dialog.dialog('close',false);
+			})
+		</script>
+	</body>
+</html>
